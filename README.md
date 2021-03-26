@@ -7,3 +7,8 @@ Rights Restoration is a Rails app that helps people file a petition to restore t
 
 # Development 💻
 * ...
+
+# Team 🧙‍♀️🧙‍♀️
+ mailiis law @mailaw
+ 
+ em barnard-shao @embshao
