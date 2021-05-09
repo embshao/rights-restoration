@@ -9,15 +9,7 @@
         <h1>nihao shijie</h1>
 
         <h1>Petition to restore your voting rights back! Find out if you qualify here.</h1>
-        <p>
-          What state do you live in?
-        </p>
-
-        <select name="cars" id="cars">
-          <% State.all.map do |state| %>
-            <option value=<%= state.abbreviation %>><%= state.name %></option>
-          <% end %>
-        </select>
+        <%= link_to "Get started", states_path %>
       </div>
     </div>
   </div>

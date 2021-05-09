@@ -1,0 +1,9 @@
+<p>
+  What state do you live in?
+</p>
+
+<select name="cars" id="cars">
+  <% State.all.map do |state| %>
+    <option value=<%= state.abbreviation %>><%= state.name %></option>
+  <% end %>
+</select>
