@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root to: "public_pages#home"
 
-  resources :states, only: [:index]
+  resources :states, only: [:index, :create]
 end

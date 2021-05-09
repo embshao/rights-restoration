@@ -7,3 +7,8 @@
     <option value=<%= state.abbreviation %>><%= state.name %></option>
   <% end %>
 </select>
+
+<%= form_with model: @article do |form| %>
+  <%= form.text_field :title %>
+  <%= form.submit "Create" %>
+<% end %>
