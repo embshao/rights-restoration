@@ -1,0 +1,14 @@
+.sla--hero {
+  background-color: white;
+}
+
+.slab--additional-info {
+  background-color: #f7f5f4;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @media screen and (max-width: $tablet-up) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}

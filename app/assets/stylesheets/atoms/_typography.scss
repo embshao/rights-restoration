@@ -1,0 +1,41 @@
+a {
+  &.link--cta {
+    color: black;
+    font-weight: bold;
+    display: block;
+  }
+  color: $color-link-default;
+  &:hover {
+    color: $color-link-hover;
+  }
+  &:visited {
+    color: $color-link-visited;
+  }
+  &:active {
+    color: $color-link-active;
+  }
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--semibold {
+  font-weight: 500;
+}
+
+.text--teal {
+  color: $color-teal;
+}
+
+.text--purple {
+  color: $color-purple;
+}
+
+.text--black {
+  color: rgb(0, 0, 0);
+}

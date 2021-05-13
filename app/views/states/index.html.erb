@@ -1,14 +1,23 @@
-<p>
-  What state do you live in?
-</p>
+<section class="slab slab--white">
+  <div class="grid">
+    <div class="grid__item width-three-fourths shift-one-eighth">
+      <h1 class="form-question">
+        What state do you live in?
+      </h1>
 
-<select name="cars" id="cars">
-  <% State.all.map do |state| %>
-    <option value=<%= state.abbreviation %>><%= state.name %></option>
-  <% end %>
-</select>
+      <select name="state">
+        <% State.all.map do |state| %>
+          <option value=<%= state.abbreviation %>><%= state.name %></option>
+        <% end %>
+      </select>
 
-<%= form_with model: @article do |form| %>
-  <%= form.text_field :title %>
-  <%= form.submit "Create" %>
-<% end %>
+      <div class="spacing-above-60">
+        <%= link_to "Continue", root_path, class: "button button--primary button--wide text--centered" %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%#= form_tag states_path, method: "get" %>
+
+<%# end %>

@@ -31,3 +31,14 @@
 
 en:
   hello: "Hello world"
+  views:
+    public_pages:
+      home:
+        banner:
+          heading: "Info heading"
+          info: "more info"
+        header: "Petition to restore your voting rights."
+        subheader: "Find out if you qualify here."
+        title: "File to restore voting rights"
+  general:
+    get_started: "Get started"
