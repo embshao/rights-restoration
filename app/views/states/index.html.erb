@@ -1,28 +1,18 @@
 <section class="slab slab--white">
   <div class="grid">
     <div class="grid__item width-three-fourths shift-one-eighth">
-      <h1 class="form-question">
-        What state do you live in?
-      </h1>
+      <h1 class="form-question">What state do you live in?</h1>
 
-      <select name="state">
-        <% State.all.map do |state| %>
-          <option value=<%= state.abbreviation %>><%= state.name %></option>
-        <% end %>
-      </select>
+      <%= form_with url: states_path, method: :post do |form| %>
+        <div class="select">
+          <% states_array = State.all.map { |state| [state.name, state.id] } %>
+          <%= select_tag :state, options_for_select(states_array), class: "select__element" %>
+        </div>
 
-      <%= form_with url: "/states", method: :post do |form| %>
-        <%= form.text_field :id %>
-        <%= form.submit "Search" %>
+        <div class="spacing-above-60">
+          <%= form.submit "Continue", class: "button button--primary button--wide text--centered" %>
+        </div>
       <% end %>
-
-      <div class="spacing-above-60">
-        <%= link_to "Continue", root_path, class: "button button--primary button--wide text--centered" %>
-      </div>
     </div>
   </div>
 </section>
-
-<%#= form_tag states_path, method: "get" %>
-
-<%# end %>
