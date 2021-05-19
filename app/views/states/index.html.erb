@@ -11,6 +11,11 @@
         <% end %>
       </select>
 
+      <%= form_with url: "/states", method: :post do |form| %>
+        <%= form.text_field :id %>
+        <%= form.submit "Search" %>
+      <% end %>
+
       <div class="spacing-above-60">
         <%= link_to "Continue", root_path, class: "button button--primary button--wide text--centered" %>
       </div>
