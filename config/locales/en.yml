@@ -42,3 +42,10 @@ en:
         title: "File to restore voting rights"
   general:
     get_started: "Get started"
+  states:
+    index:
+      title: "State of residence"
+    off_board:
+      title: "Off board"
+    on_board:
+      title: "Let's get started"

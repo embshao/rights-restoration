@@ -1,1 +1,29 @@
-Looks like we support filing in your state! Let's get started...
+<% content_for :page_title do %>
+  <%= t(".title") %>
+<% end %>
+
+<% content_for :card do %>
+  <div class="form-card__header">
+    <h1 class="form-card__title">
+      <%= "We support filing in #{@state.name}! Here is how rights restoration works:" %>
+    </h1>
+  </div>
+  <div class="form-card__content">
+    <div class="vertical-steps">
+      <div class="vertical-steps__step">
+        <div class="vertical-steps__emoji emoji--clipboard"></div>
+        <p class="with-no-padding"><strong>Step one</strong></p>
+        <p class="form-card__body-text">
+          File a petition; We will send your petition to Maricopa county; Judge will review you petition; You will recieve a notification if your petition was approved; Register to vote; Vote
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="form-card__footer">
+    <p>
+      <%= link_to root_path, class: "button button--primary" do %>
+        <%= "button" %> <i class="icon icon-arrow_forward"></i>
+      <% end %>
+    </p>
+  </div>
+<% end %>

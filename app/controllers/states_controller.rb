@@ -1,4 +1,6 @@
 class StatesController < ApplicationController
+  layout "card"
+
   def index; end
 
   def create
@@ -13,5 +15,7 @@ class StatesController < ApplicationController
 
   def off_board; end
 
-  def on_board; end
+  def on_board
+    @state = State.find(params[:id])
+  end
 end

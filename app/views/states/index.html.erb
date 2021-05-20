@@ -1,18 +1,19 @@
-<section class="slab slab--white">
-  <div class="grid">
-    <div class="grid__item width-three-fourths shift-one-eighth">
-      <h1 class="form-question">What state do you live in?</h1>
+<% content_for :page_title do %>
+  <%= t(".title") %>
+<% end %>
 
-      <%= form_with url: states_path, method: :post do |form| %>
-        <div class="select">
-          <% states_array = State.all.map { |state| [state.name, state.id] } %>
-          <%= select_tag :state, options_for_select(states_array), class: "select__element" %>
-        </div>
-
-        <div class="spacing-above-60">
-          <%= form.submit "Continue", class: "button button--primary button--wide text--centered" %>
-        </div>
-      <% end %>
-    </div>
+<% content_for :card do %>
+  <div class="form-card__header">
+    <h1 class="form-card__title">What state do you live in?</h1>
   </div>
-</section>
+  <%= form_with url: next_path, method: :post do |form| %>
+    <div class="select">
+      <% states_array = State.all.map { |state| [state.name, state.id] } %>
+      <%= select_tag :state, options_for_select(states_array), class: "select__element" %>
+    </div>
+
+    <div class="spacing-above-35">
+      <%= form.submit "Continue", class: "button button--primary button--wide text--centered" %>
+    </div>
+  <% end %>
+<% end %>
