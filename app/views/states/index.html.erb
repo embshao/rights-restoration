@@ -4,7 +4,7 @@
 
 <% content_for :card do %>
   <div class="form-card__header">
-    <h1 class="form-card__title">What state do you live in?</h1>
+    <h1 class="form-card__title"><%= t(".card_question") %></h1>
   </div>
   <%= form_with url: states_path, method: :post do |form| %>
     <div class="select">

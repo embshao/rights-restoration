@@ -46,17 +46,18 @@ en:
   states:
     index:
       title: "State of residence"
+      card_question: "In which state did your felony conviction occur?"
     off_board:
       title: "Off board"
     on_board:
       title: "Let's get started"
-      card_title_html: "We support filing in %{state}! </br> Here is how rights restoration works:"
+      card_title_html: "We support civil rights restoration in %{state}! </br> Here's what the process will look like:"
       step_one:
-        title_html: "<strong>Answer questions for petition</strong>"
-        body: "Answer a few questions about your situation to file a petition"
+        title_html: "<strong>Submit a petition</strong>"
+        body: "We'll guide through a series of questions. The process should take around XX minutes."
       step_two:
         title_html: "<strong>Send your petition</strong>"
-        body: "We will send your petition to Maricopa County Court House for approval or you can print out your petition and send it"
+        body: "You can chose to have us submit your petition or you can print it out and send it for approval yourself."
       step_three:
         title_html: "<strong>Register to vote!</strong>"
-        body: "Once you're approved and your civil liberties are restored you can register to vote"
+        body: "Once you're approved your civil liberties will be restored and you can register to vote."
