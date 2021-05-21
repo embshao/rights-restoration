@@ -19,11 +19,21 @@
 @import "mixins/sr-only";
 @import "atoms/variables";
 
+html, body {
+  height: 100%;
+}
+
 body {
-  margin-bottom: 0;
   background-color: #f7f5f4;
   font-family: $font-rr;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.main {
+  flex: 1;
 }

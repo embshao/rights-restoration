@@ -1,0 +1,27 @@
+<% content_for :page_title do %>
+  <%= t(".title") %>
+<% end %>
+
+<section class="slab slab--white slab--half-padded">
+  <div class="grid">
+    <div class="grid__item width-three-fourths">
+      <h1 class="heading-35"><%= t(".header") %></h1>
+      <%= render('components/molecules/accordion', title: t(".lost_rights.title")) do %>
+        <p><strong>A felony suspends a person's civil liberties including:</strong></p>
+        <ul class="list--bulleted">
+          <li>Right to vote</li>
+          <li>Right to hold public office of trust or profit</li>
+          <li>Right to serve as a juror</li>
+          <li>Right to possess a gun</li>
+          <li>In some cases, obtaining business and professional licenses</li>
+        </ul>
+      <% end %>
+
+      <%= render('components/molecules/accordion', title: t(".one_felony.title")) do %>
+        <p>
+          If you’ve only had one felony conviction, your rights are automatically restored when you’ve completed probation, been discharged from prison and/or paid all fines or restitutions.
+        </p>
+      <% end %>
+    </div>
+  </div>
+</section>

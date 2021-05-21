@@ -35,7 +35,7 @@ en:
     continue: "Continue"
     english: "English"
     spanish: "Español"
-    site_title: "🗳 RightsRestoration"
+    site_title: "🗳  RightsRestoration"
   views:
     public_pages:
       home:
@@ -71,3 +71,11 @@ en:
         title_html: "<strong>Register to vote!</strong>"
         body: "Once you're approved your civil liberties will be restored and you can register to vote."
       button: "Find out if you're qualified"
+  public_pages:
+    faq:
+      title: "FAQ"
+      header: "Frequently asked questions (Arizona):"
+      lost_rights:
+        title: "What rights are lost when a person is convicted of a felony?"
+      one_felony:
+        title: "What if I’ve only had one felony?"

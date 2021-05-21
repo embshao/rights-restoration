@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:page_title) + " |" %> Rights Restoration</title>
+    <title><%= content_for?(:page_title) ? content_for(:page_title) + " |" : "" %> Rights Restoration</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,11 +10,13 @@
   </head>
 
   <body>
-  <%= render 'shared/header' %>
-    <div id="content">
-      <%= content_for?(:content) ? yield(:content) : yield %>
+    <div class="container">
+      <%= render 'shared/header' %>
+      <div class="main">
+        <%= content_for?(:content) ? yield(:content) : yield %>
+      </div>
+      <%= render('shared/footer') %>
     </div>
-    <%= render('shared/footer') %>
     <%= yield(:script) if content_for?(:script) %>
   </body>
 </html>
