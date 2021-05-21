@@ -25,9 +25,9 @@
         </li>
 
         <li>
-          <%=t("views.public_pages.resources.title") %>
-        </li>
-
+          <%= link_to root_path do %>
+            <%=t("views.public_pages.resources.title") %>
+          <% end %>
         <li>
           <%=mail_to "support@rightsrestoration.org" %>
         </li>

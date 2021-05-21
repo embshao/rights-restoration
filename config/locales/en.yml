@@ -35,13 +35,14 @@ en:
     continue: "Continue"
     english: "English"
     spanish: "Español"
+    site_title: "🗳 RightsRestoration"
   views:
     public_pages:
       home:
         banner:
           heading: "Info heading"
           info: "more info"
-        header: "Petition to restore your voting rights."
+        header: "Petition to restore your civil liberties after a felony conviction."
         subheader: "Find out if you qualify here."
         title: "File to restore voting rights"
       faq:
@@ -50,7 +51,7 @@ en:
         title: "Resources"
     shared:
       footer:
-        service_description_html: "This site is a free tool for the purpose of restoring civil liberties after felony convictions."
+        service_description_html: "This site is a free tool for restoring civil liberties after felony convictions."
   states:
     index:
       title: "State of residence"

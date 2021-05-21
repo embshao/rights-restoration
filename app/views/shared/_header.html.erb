@@ -1,0 +1,19 @@
+<header class="main-header">
+  <div class="toolbar">
+    <div class="toolbar__left">
+      <div class="toolbar__item main-header__title">
+        <%= link_to root_path, class: "toolbar__logo-text" do %>
+          <%= t('general.site_title') %>
+        <% end %>
+      </div>
+    </div>
+    <div class="toolbar__right">
+      <% if I18n.locale != :en %>
+        <span class="toolbar__item text--small"><%= t("general.english") %></span>
+      <% end %>
+      <% if I18n.locale != :es %>
+        <span class="toolbar__item text--small"><%= t("general.spanish") %></span>
+      <% end %>
+    </div>
+  </div>
+</header>
