@@ -14,32 +14,15 @@
  */
 
 @import "cfa_styleguide_main";
-//@import "mixins/sr-only";
-//@import "atoms/variables";
-//@import "atoms/typography";
-//@import "atoms/slabs";
-//@import "templates/home";
-//@import 'left_align';
+@import "components/footer";
+@import "mixins/sr-only";
+@import "atoms/variables";
 
-//body {
-//  margin-bottom: 0;
-//  background-color: #f7f5f4;
-//  font-family: $font-rr;
-//}
-//
-//@mixin visually-hidden {
-//  position: absolute;
-//  width: 1px;
-//  height: 1px;
-//  padding: 0;
-//  overflow: hidden;
-//  clip: rect(0, 0, 0, 0);
-//  white-space: nowrap;
-//  border: 0;
-//}
-//
-//.hide-on-mobile {
-//  @media screen and (max-width: $tablet-up) {
-//    @include visually-hidden;
-//  }
-//}
+body {
+  margin-bottom: 0;
+  background-color: #f7f5f4;
+  font-family: $font-rr;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

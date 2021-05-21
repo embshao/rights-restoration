@@ -30,7 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  general:
+    get_started: "Get started"
+    continue: "Continue"
+    english: "English"
+    spanish: "Español"
   views:
     public_pages:
       home:
@@ -40,9 +44,13 @@ en:
         header: "Petition to restore your voting rights."
         subheader: "Find out if you qualify here."
         title: "File to restore voting rights"
-  general:
-    get_started: "Get started"
-    continue: "Continue"
+      faq:
+        title: "FAQ"
+      resources:
+        title: "Resources"
+    shared:
+      footer:
+        service_description_html: "This site is a free tool for the purpose of restoring civil liberties after felony convictions."
   states:
     index:
       title: "State of residence"
@@ -61,3 +69,4 @@ en:
       step_three:
         title_html: "<strong>Register to vote!</strong>"
         body: "Once you're approved your civil liberties will be restored and you can register to vote."
+      button: "Find out if you're qualified"

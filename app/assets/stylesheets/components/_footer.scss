@@ -1,0 +1,20 @@
+.slab--footer {
+  background-color: #efefef;
+  flex: 0 0 50px;
+  margin-top: auto;
+  color: white;
+  background-color: black;
+  padding-bottom: $s10;
+  margin-top: $s10;
+
+  a {
+    color: inherit;
+  }
+
+  .footer-links {
+    margin-top: 1rem;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
