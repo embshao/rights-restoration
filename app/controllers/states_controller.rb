@@ -1,7 +1,7 @@
 class StatesController < ApplicationController
-  layout "card"
-
-  def index; end
+  def index
+    render layout: "card"
+  end
 
   def create
     @state = State.find(params[:state])
@@ -13,9 +13,13 @@ class StatesController < ApplicationController
     end
   end
 
-  def off_board; end
+  def off_board
+    render layout: "card"
+  end
 
   def on_board
     @state = State.find(params[:id])
+
+    render layout: "transition_card"
   end
 end

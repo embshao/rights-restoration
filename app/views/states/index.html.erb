@@ -6,7 +6,7 @@
   <div class="form-card__header">
     <h1 class="form-card__title">What state do you live in?</h1>
   </div>
-  <%= form_with url: next_path, method: :post do |form| %>
+  <%= form_with url: states_path, method: :post do |form| %>
     <div class="select">
       <% states_array = State.all.map { |state| [state.name, state.id] } %>
       <%= select_tag :state, options_for_select(states_array), class: "select__element" %>

@@ -42,6 +42,7 @@ en:
         title: "File to restore voting rights"
   general:
     get_started: "Get started"
+    continue: "Continue"
   states:
     index:
       title: "State of residence"
@@ -49,3 +50,13 @@ en:
       title: "Off board"
     on_board:
       title: "Let's get started"
+      card_title_html: "We support filing in %{state}! </br> Here is how rights restoration works:"
+      step_one:
+        title_html: "<strong>Answer questions for petition</strong>"
+        body: "Answer a few questions about your situation to file a petition"
+      step_two:
+        title_html: "<strong>Send your petition</strong>"
+        body: "We will send your petition to Maricopa County Court House for approval or you can print out your petition and send it"
+      step_three:
+        title_html: "<strong>Register to vote!</strong>"
+        body: "Once you're approved and your civil liberties are restored you can register to vote"
