@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   get "/faq", to: "public_pages#faq"
   get "/resources", to: "public_pages#resources"
 
-  resources :states, only: [:index, :create]
-  get "/off_board", to: "states#off_board", as: :off_board #off_board/:id
-  get "/states/:id", to: "states#on_board", as: :on_board #states/:id or just /az
+  resources :off_boards, only: [:index]
 
-  # screener questions
-  # get "/az/"
+  scope module: 'questions' do
+    resources :states, only: [:index, :create]
+    resources :overviews, only: [:index]
+    resources :felony_nums, only: [:index, :create]
+  end
 end

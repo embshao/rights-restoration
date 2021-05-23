@@ -3,33 +3,33 @@
     <div class="grid">
       <div class="grid__item width-three-fourths footer-description">
         <p>
-          <%=t("views.shared.footer.service_description_html")%>
+          <%=t(".service_description_html")%>
         </p>
       </div>
 
       <ul class="grid__item width-one-fourth footer-links">
-        <% if I18n.locale != :en %>
-          <li>
-            <%=t("general.english") %>
-          </li>
-        <% end %>
-        <% if I18n.locale != :es %>
-          <li>
-            <%=t("general.spanish") %>
-          </li>
-        <% end %>
+        <%# if I18n.locale != :en %>
+<!--          <li>-->
+            <%#=t("general.english") %>
+<!--          </li>-->
+        <%# end %>
+        <%# if I18n.locale != :es %>
+<!--          <li>-->
+            <%#=t("general.spanish") %>
+<!--          </li>-->
+        <%# end %>
         <li>
           <%= link_to faq_path do %>
-            <%=t("views.public_pages.faq.title") %>
+            <%=t("public_pages.faq.title") %>
           <% end %>
         </li>
 
         <li>
           <%= link_to resources_path do %>
-            <%=t("views.public_pages.resources.title") %>
+            <%=t("public_pages.resources.title") %>
           <% end %>
         <li>
-          <%=mail_to "support@rightsrestoration.org" %>
+          <%=mail_to t("general.support_email") %>
         </li>
       </ul>
     </div>

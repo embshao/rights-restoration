@@ -35,43 +35,18 @@ en:
     continue: "Continue"
     english: "English"
     spanish: "Español"
-    site_title: "🗳  RightsRestoration"
-  views:
-    public_pages:
-      home:
-        banner:
-          heading: "Info heading"
-          info: "more info"
-        header: "Petition to restore your civil liberties after a felony conviction."
-        subheader: "Find out if you qualify here."
-        title: "File to restore voting rights"
-      faq:
-        title: "FAQ"
-      resources:
-        title: "Resources"
-    shared:
-      footer:
-        service_description_html: "This site is a free tool for restoring civil liberties after felony convictions."
-  states:
-    index:
-      title: "State of residence"
-      card_question: "In which state did your felony conviction occur?"
-    off_board:
-      title: "Off board"
-    on_board:
-      title: "Let's get started"
-      card_title_html: "We support civil rights restoration in %{state}! </br> Here's what the process will look like:"
-      step_one:
-        title_html: "<strong>Submit a petition</strong>"
-        body: "We'll guide through a series of questions. The process should take around XX minutes."
-      step_two:
-        title_html: "<strong>Send your petition</strong>"
-        body: "You can chose to have us submit your petition or you can print it out and send it for approval yourself."
-      step_three:
-        title_html: "<strong>Register to vote!</strong>"
-        body: "Once you're approved your civil liberties will be restored and you can register to vote."
-      button: "Find out if you're qualified"
+    site_title: "🗳  RestoreYourRights"
+    support_email: "support@restoreyourrights.us"
   public_pages:
+    home:
+      banner:
+        heading: "Info heading"
+        info: "more info"
+      header: "Petition to restore your civil liberties after a felony conviction."
+      subheader: "Find out if you qualify here."
+      title: "File to restore voting rights"
+    resources:
+      title: "Resources"
     faq:
       title: "FAQ"
       header: "Frequently asked questions (Arizona):"
@@ -79,3 +54,36 @@ en:
         title: "What rights are lost when a person is convicted of a felony?"
       one_felony:
         title: "What if I’ve only had one felony?"
+      firearms:
+        title: "Does this petition include restoring my right to possess a firearm?"
+  off_boards:
+    index:
+      title: "Unsupported state"
+      header: "Unfortunately, we do not support filing a petition for this state on this site currently"
+      body: "Here are some other resources..."
+  shared:
+    footer:
+      service_description_html: "RestoreYourRights is a free tool for restoring civil liberties."
+  questions:
+    states:
+      index:
+        title: "State of residence"
+        card_question: "In which state did your felony conviction occur?"
+    overviews:
+      index:
+        title: "Let's get started"
+        card_title_html: "We support civil rights restoration in %{state}! </br> Here's what the process will look like:"
+        step_one:
+          title_html: "<strong>Submit a petition</strong>"
+          body: "We'll guide through a series of questions. The process should take around XX minutes."
+        step_two:
+          title_html: "<strong>Send your petition</strong>"
+          body: "You can chose to have us submit your petition or you can print it out and send it for approval yourself."
+        step_three:
+          title_html: "<strong>Register to vote!</strong>"
+          body: "Once you're approved your civil liberties will be restored and you can register to vote."
+        button: "Find out if you're qualified"
+    felony_nums:
+      index:
+        title: "Number of felonies"
+        card_question: "How many felonies have you had?"
