@@ -44,7 +44,7 @@ en:
         info: "more info"
       header: "Petition to restore your civil liberties after a felony conviction."
       subheader: "Find out if you qualify here."
-      title: "File to restore voting rights"
+      title: "File to restore your civil liberties"
     resources:
       title: "Resources"
     faq:
@@ -59,7 +59,7 @@ en:
   off_boards:
     index:
       title: "Unsupported state"
-      header: "Unfortunately, we do not support filing a petition for this state on this site currently"
+      header: "Unfortunately, we do not support filing a petition in %{state} on this site currently"
       body: "Here are some other resources..."
   shared:
     footer:
@@ -86,4 +86,4 @@ en:
     felony_nums:
       index:
         title: "Number of felonies"
-        card_question: "How many felonies have you had?"
+        card_question: "How many felony convictions do you have in %{state} or any other state?"

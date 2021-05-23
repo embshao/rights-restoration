@@ -11,4 +11,10 @@
 #  updated_at :datetime         not null
 #
 class Client < ApplicationRecord
+  # has_one :petition, dependent: :destroy
+
 end
+
+# Add... middle initial
+# contact info -- address, phone number, email
+# date of birth

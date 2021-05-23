@@ -3,10 +3,10 @@ module Questions
     layout "card"
 
     def index
+      @state = State.find(session[:state])
     end
 
     def create
-      params[:num]
     end
   end
 end

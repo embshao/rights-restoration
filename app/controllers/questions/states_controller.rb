@@ -6,6 +6,7 @@ module Questions
 
     def create
       @state = State.find(params[:state])
+      session[:state] = params[:state]
 
       if @state && @state.can_file?
         redirect_to overviews_path

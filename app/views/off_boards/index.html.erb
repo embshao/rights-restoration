@@ -3,6 +3,6 @@
 <% end %>
 
 <% content_for :card do %>
-  <h2><%= t('.header') %></h2>
+  <h2><%= t('.header', state: State.find(session[:state]).name ) %></h2>
   <p><%= t('.body') %></p>
 <% end %>
