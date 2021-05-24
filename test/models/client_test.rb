@@ -4,10 +4,12 @@
 #
 #  id                 :integer          not null, primary key
 #  city               :string
+#  date_of_birth      :date
 #  email              :string
 #  first_name         :string
 #  last_name          :string
 #  middle_initial     :string
+#  phone_number       :string
 #  state              :string
 #  state_of_residence :string
 #  street_address     :string
