@@ -5,7 +5,8 @@ class QuestionNavigation
   FLOW = [
     Questions::StatesController,
     Questions::OverviewsController,
-    Questions::FelonyNumsController
+    Questions::FelonyNumsController,
+    Questions::NamesController,
   ].freeze
 
 end

@@ -7,6 +7,14 @@ module Questions
     end
 
     def create
+      if params[:num].to_i > 1
+        redirect_to new_client_path
+      else
+        redirect_to off_board_num_path
+      end
+    end
+
+    def off_board
     end
   end
 end
