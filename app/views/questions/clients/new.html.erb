@@ -8,9 +8,15 @@
       <%= t('.title') %>
     </h1>
   </div>
-  <%= form_with(model: @client, url: client_path(id: @client.id)) do |f| %>
+  <%= form_with(model: @client, url: clients_path) do |f| %>
     <%= f.label :first_name %>
     <%= f.text_field :first_name, class: "text-input"%>
+
+    <%= f.label :middle_initial %>
+    <%= f.text_field :middle_initial, class: "text-input"%>
+
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, class: "text-input"%>
     <%= f.submit "Continue", class: "button button--primary button--wide text--centered" %>
   <% end %>
 <% end %>

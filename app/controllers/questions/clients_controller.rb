@@ -3,20 +3,21 @@ module Questions
     layout "card"
 
     def new
-      #analytics track
-      @client = Client.new
     end
 
-    def update
-      # set current client
+    def create      # set current client
+      @client = Client.new
       @client.assign_attributes(client_params)
-      @client.save!
+      if @client.save!
+        # redirect_to
+      end
+
     end
 
     private
 
     def client_params
-      params.require(:client).permit(:first_name, :middle_initial, :last_name)
+      params.permit(:first_name, :middle_initial, :last_name)
     end
   end
 end
