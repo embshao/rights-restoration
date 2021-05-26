@@ -46,3 +46,5 @@ class Petition < ApplicationRecord
   enum open_criminal_cases: { unfilled: 0, yes: 1, no: 2, unsure: 3 }, _prefix: :open_criminal_cases
   enum hearing_requested: { unfilled: 0, yes: 1, no: 2, unsure: 3 }, _prefix: :hearing_requested
 end
+
+# add client id foreign key

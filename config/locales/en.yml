@@ -87,3 +87,6 @@ en:
       index:
         title: "Number of felonies"
         card_question: "How many felony convictions do you have in %{state} or any other state?"
+    clients:
+      new:
+        title: "What is your name?"

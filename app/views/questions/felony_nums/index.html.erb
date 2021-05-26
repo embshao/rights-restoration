@@ -6,11 +6,10 @@
   <div class="form-card__header">
     <h1 class="form-card__title"><%= t(".card_question", state: "Arizona") %></h1>
   </div>
-  <%= form_with url: root_path, method: :post do |form| %>
+  <%= form_with url: felony_nums_path, method: :post do |form| %>
     <div class="select">
       <%= select_tag :num, options_for_select([0,1,2,3,4,"5+"]), class: "select__element" %>
     </div>
-
     <div class="spacing-above-35">
       <%= form.submit "Continue", class: "button button--primary button--wide text--centered" %>
     </div>

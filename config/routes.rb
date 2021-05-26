@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     resources :overviews, only: [:index]
     resources :felony_nums, only: [:index, :create]
     resources :clients, only: [:new, :create]
+    get "/off_board_num", to: "felony_nums#off_board"
   end
 end

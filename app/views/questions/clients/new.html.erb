@@ -1,0 +1,16 @@
+<% content_for :page_title do %>
+  <%= t(".title") %>
+<% end %>
+
+<% content_for :card do %>
+  <div class="form-card__header">
+    <h1 class="form-card__title">
+      <%= t('.title') %>
+    </h1>
+  </div>
+  <%= form_with(model: @client, url: client_path(id: @client.id)) do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, class: "text-input"%>
+    <%= f.submit "Continue", class: "button button--primary button--wide text--centered" %>
+  <% end %>
+<% end %>
