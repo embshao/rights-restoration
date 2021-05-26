@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     resources :states, only: [:index, :create]
     resources :overviews, only: [:index]
     resources :felony_nums, only: [:index, :create]
+    resources :clients, only: [:new, :create]
   end
 end
