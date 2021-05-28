@@ -1,30 +1,28 @@
 class CreatePostDischargeApps < ActiveRecord::Migration[6.0]
   def change
     create_table :post_discharge_apps do |t|
-      t.integer :case_number
       t.date :date_of_judgement
-      t.references :client, null: false, foreign_key: true
+      t.references :client, null: false, foreign_key: true, index: true
       t.boolean :judgement_of_guilt
       t.boolean :completed_probation
-      t.boolean :two_year_discharge
+      t.boolean :discharged_two_plus_years
       t.boolean :complied_probation
-      t.boolean :uncomplied_probation
-      t.text :uncomplied_probation_explanation
+      t.text :not_complied_probation_explanation
       t.boolean :federal_conviction, default: false
-      t.boolean :paid_victim_restitution
+      t.integer :paid_victim_restitution, default: 0, null: false
       t.text :unpaid_victim_restitution_explanation
-      t.boolean :paid_court
+      t.integer :paid_court, default: 0, null: false
       t.text :unpaid_court_explanation
-      t.boolean :prev_restoration_application
-      t.date :prev_restoration_application_date
-      t.boolean :prev_granted_restoration
-      t.boolean :prev_denied_restoration
-      t.boolean :open_criminal_cases
-      t.boolean :active_warrant
+      t.integer :prior_restoration_application, default: 0, null: false
+      t.date :prior_restoration_application_date
+      t.integer :prior_granted_restoration, default: 0, null: false
+      t.integer :prior_denied_restoration, default: 0, null: false
+      t.integer :open_criminal_cases, default: 0, null: false
+      t.integer :active_warrant, default: 0, null: false
       t.text :active_warrant_explanation
       t.text :extra_consideration
-      t.boolean :hearing_requested
-      t.string :aopo_name
+      t.integer :hearing_requested, default: 0, null: false
+      t.string :attorney_or_probation_officer_name
       t.string :aopo_street_address
       t.string :aopo_zip_code
       t.string :aopo_city

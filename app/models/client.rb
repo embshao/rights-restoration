@@ -18,6 +18,6 @@
 #  updated_at         :datetime         not null
 #
 class Client < ApplicationRecord
-  # has_one :petition, dependent: :destroy
+  # has_one :set_aside_app/:post_discharge_app, dependent: :destroy
 
 end
