@@ -16,8 +16,10 @@
 @import "cfa_styleguide_main";
 @import "components/footer";
 @import "components/header";
+@import "components/form_card";
 @import "mixins/sr-only";
 @import "atoms/variables";
+@import "organisms/flash_messages";
 
 html, body {
   height: 100%;

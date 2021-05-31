@@ -10,13 +10,13 @@
   </div>
   <%= form_with(model: @client, url: clients_path) do |f| %>
     <%= f.label :first_name %>
-    <%= f.text_field :first_name, class: "text-input form-width--med "%>
+    <%= f.text_field :first_name, class: "text-input form-width--med", required: true %>
 
     <%= f.label :middle_initial %>
     <%= f.text_field :middle_initial, class: "text-input form-width--short"%>
 
     <%= f.label :last_name %>
-    <%= f.text_field :last_name, class: "text-input form-width--med"%>
+    <%= f.text_field :last_name, class: "text-input form-width--med", required: true %>
 
     <%= f.submit "Continue", class: "button button--primary button--wide text--centered" %>
   <% end %>

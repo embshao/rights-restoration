@@ -10,7 +10,7 @@ module Questions
       if params[:num].to_i > 1
         redirect_to new_client_path
       else
-        redirect_to off_board_num_path
+        redirect_to rights_auto_restored_path
       end
     end
 

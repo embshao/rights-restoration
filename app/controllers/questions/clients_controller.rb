@@ -5,13 +5,15 @@ module Questions
     def new
     end
 
-    def create      # set current client
+    def create
       @client = Client.new
       @client.assign_attributes(client_params)
       if @client.save!
-        # redirect_to
+        redirect_to edit_client_address_path(id: @client.id)
+      else
+        flash[:alert] = "Client unsuccessful update"
+        render :new
       end
-
     end
 
     private

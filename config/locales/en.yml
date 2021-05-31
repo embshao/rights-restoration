@@ -72,7 +72,7 @@ en:
     overviews:
       index:
         title: "Let's get started"
-        card_title_html: "We support civil rights restoration in %{state}! </br> Here's what the process will look like:"
+        card_title: "We support civil rights restoration in %{state}! Here's what the process will look like:"
         step_one:
           title_html: "<strong>Submit a petition</strong>"
           body: "We'll guide through a series of questions. The process should take around XX minutes."
@@ -87,6 +87,12 @@ en:
       index:
         title: "Number of felonies"
         card_question: "How many felony convictions do you have in %{state} or any other state?"
+      off_board:
+        title: "Congrats your civil rights should be restored automatically!"
+        body: "We only support civil rights restoration for two or more felonies. Since you only have one felony, your civil rights are automatically restored upon probation completion or discharge from imprisonment if all fines/restitution have been paid."
     clients:
       new:
         title: "What is your name?"
+    client_addresses:
+      edit:
+        title: "What is your address?"

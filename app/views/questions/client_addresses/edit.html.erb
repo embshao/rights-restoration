@@ -1,0 +1,28 @@
+<% content_for :page_title do %>
+  <%= t(".title") %>
+<% end %>
+
+<% content_for :card do %>
+  <div class="form-card__header">
+    <h1 class="form-card__title">
+      <%= t('.title') %>
+    </h1>
+  </div>
+  <%= form_with model: @client, url: client_address_path , method: :patch, local: true do |f| %>
+    <%= f.hidden_field :id %>
+
+    <%= f.label :street_address %>
+    <%= f.text_field :street_address, class: "text-input form-width--med", required: true %>
+
+    <%= f.label :city %>
+    <%= f.text_field :city, class: "text-input form-width--short", required: true %>
+
+    <%= f.label :state_of_residence %>
+    <%= f.text_field :state_of_residence, class: "text-input form-width--short", required: true %>
+
+    <%= f.label :zip_code %>
+    <%= f.text_field :zip_code, class: "text-input form-width--med", required: true %>
+
+    <%= f.submit "Continue", class: "button button--primary button--wide text--centered" %>
+  <% end %>
+<% end %>
