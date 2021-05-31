@@ -1,0 +1,20 @@
+<% content_for :page_title do %>
+  <%= t('.title') %>
+<% end %>
+
+<% content_for :card do %>
+  <div class="form-card__header">
+    <h1 class="form-card__title">
+      <%= t('.title') %>
+    </h1>
+  </div>
+  <%= form_with model: @client, url: client_contact_path, method: "patch" do |f| %>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number, class: "text-input form-width--med", required: true %>
+
+    <%= f.label :email %>
+    <%= f.text_field :email, class: "text-input form-width--long", required: true %>
+
+    <%= f.submit "Continue", class: "button button--primary button--wide text--centered" %>
+  <% end %>
+<% end %>

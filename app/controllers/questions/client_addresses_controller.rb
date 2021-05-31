@@ -7,7 +7,7 @@ module Questions
 
     def update
       if Client.find(params[:id]).update(client_address_params)
-        redirect_to edit_client_address_path(params[:id])
+        redirect_to edit_client_contact_path(params[:id])
       else
         flash[:alert] = "Client unsuccessfully updated"
         redirect_to edit_client_address_path(params[:id])

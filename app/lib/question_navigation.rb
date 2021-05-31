@@ -6,7 +6,10 @@ class QuestionNavigation
     Questions::StatesController,
     Questions::OverviewsController,
     Questions::FelonyNumsController,
-    Questions::NamesController,
+    Questions::ClientsController,
+    # ask if address is protected
+    Questions::ClientAddressesController,
+    Questions::ClientContactsController,
   ].freeze
 
 end

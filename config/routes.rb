@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :felony_nums, only: [:index, :create], path: "number-of-felonies"
     resources :clients, only: [:new, :create], path: "name"
     resources :client_addresses, only: [:edit, :update], path: "address"
+    resources :client_contacts, only: [:edit, :update], path: "contact-info"
     get "/rights-auto-restored", to: "felony_nums#off_board"
   end
 end

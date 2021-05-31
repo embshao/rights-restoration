@@ -96,3 +96,6 @@ en:
     client_addresses:
       edit:
         title: "What is your address?"
+    client_contacts:
+      edit:
+        title: "What is your contact information?"
