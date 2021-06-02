@@ -15,13 +15,13 @@
     <%= f.text_field :street_address, class: "text-input form-width--med", required: true %>
 
     <%= f.label :city %>
-    <%= f.text_field :city, class: "text-input form-width--short", required: true %>
+    <%= f.text_field :city, class: "text-input form-width--med", required: true %>
 
     <%= f.label :state_of_residence %>
     <%= f.text_field :state_of_residence, class: "text-input form-width--short", required: true %>
 
     <%= f.label :zip_code %>
-    <%= f.text_field :zip_code, class: "text-input form-width--med", required: true %>
+    <%= f.text_field :zip_code, class: "text-input form-width--short", required: true %>
 
     <%= f.submit "Continue", class: "button button--primary button--wide text--centered" %>
   <% end %>

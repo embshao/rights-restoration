@@ -18,6 +18,10 @@
     <%= f.label :last_name %>
     <%= f.text_field :last_name, class: "text-input form-width--med", required: true %>
 
+    <h1 class="form-card__title">What's your date of birth?</h1>
+    <%= f.label :date_of_birth %>
+    <%= f.text_field :date_of_birth, class: "text-input form-width--med", required: true %>
+
     <%= f.submit "Continue", class: "button button--primary button--wide text--centered" %>
   <% end %>
 <% end %>

@@ -19,7 +19,7 @@ module Questions
     private
 
     def client_params
-      params.permit(:first_name, :middle_initial, :last_name)
+      params.permit(:first_name, :middle_initial, :last_name, :date_of_birth)
     end
   end
 end
