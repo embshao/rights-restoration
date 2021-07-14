@@ -90,6 +90,10 @@ en:
       off_board:
         title: "Congrats your civil rights should be restored automatically!"
         body: "We only support civil rights restoration for two or more felonies. Since you only have one felony, your civil rights are automatically restored upon probation completion or discharge from imprisonment if all fines/restitution have been paid."
+    time_from_sentence:
+      index:
+        title: Time after sentence/probation
+        card_question: "When did you finish your sentence?"
     clients:
       new:
         title: "What is your name?"

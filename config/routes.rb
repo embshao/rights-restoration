@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :states, only: [:index, :create], path: "state-of-conviction"
     resources :overviews, only: [:index], path: "application-overview"
     resources :felony_nums, only: [:index, :create], path: "number-of-felonies"
+    resources :time_from_sentence, only: [:index, :create], path: "time-from-sentence"
     resources :clients, only: [:new, :create], path: "name"
     resources :client_addresses, only: [:edit, :update], path: "address"
     resources :client_contacts, only: [:edit, :update], path: "contact-info"

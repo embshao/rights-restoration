@@ -1,5 +1,5 @@
 module Questions
-  class FelonyNumsController < ApplicationController
+  class TimeFromSentenceController < ApplicationController
     layout "card"
 
     def index
@@ -8,13 +8,11 @@ module Questions
 
     def create
       if params[:num].to_i > 1
-        redirect_to time_from_sentence_index_path
+        redirect_to new_client_path
       else
         redirect_to rights_auto_restored_path
       end
     end
 
-    def off_board
-    end
   end
 end

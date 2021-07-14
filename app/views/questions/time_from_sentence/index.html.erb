@@ -1,0 +1,18 @@
+<% content_for :page_title do %>
+  <%= t('.title') %>
+<% end %>
+
+<% content_for :card do %>
+  <div class="form-card__header">
+    <h1 class="form-card__title"><%= t(".card_question", state: "Arizona") %></h1>
+  </div>
+  <%= form_with url: time_from_sentence_index_path, method: :post do |f| %>
+    <h1 class="form-card__title">What day did you complete your sentence or probation?</h1>
+    <%= f.label :date_of_completion %>
+    <%= f.text_field :date_of_completion, class: "text-input form-width--med", required: true %>
+
+    <div class="spacing-above-35">
+      <%= f.submit "Continue", class: "button button--primary button--wide text--centered" %>
+    </div>
+  <% end %>
+<% end %>
